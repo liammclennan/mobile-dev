@@ -1,5 +1,3 @@
-http://www.colourlovers.com/palette/1930/cheer_up_emo_kid
-font yanone something
 
 Cross-Platform Mobile Development
 ======================
@@ -22,4 +20,8 @@ Phonegap
 Its purpose. What it is. How it works.
 
 Now an apache project named callback
+
+
+HTML5 Boilerplate
+===========
 
