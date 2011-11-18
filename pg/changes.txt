@@ -1,0 +1,123 @@
+-------------------
+ANDROID
+-------------------
+Anis Kadri (5):
+      cleaner way for handling splashscreens
+      whitelist support
+      adding isUrlWhiteListed in shouldOverrideUrlLoading
+      forgot to resolve conflict
+      improved whitelisting
+
+Bryce Curtis (17):
+      Formalize logging with printf-type optimization.  Wrap Android log facilities instead of using System.out.println().
+      Correct log level comparison.
+      Add comments and rename loadWhiteList() to loadConfiguration().
+      Use endActivity() for consistency.  Improve error handling.
+      Don't override history.back since jQuery also does it.
+      Fix Issue #258 - navigator.app.exitApp() and navigator.app.backHistory() not working in PhoneGap 1.1.0 on Android
+      Load multi-page apps in same webview and update pause/resume for consistency.
+      Set activity state correctly when ending activity.
+      Run error dialog on UI thread.
+      Set activity state correctly when ending activity.
+      Use LOG instead of System.out.println for logging.
+      Don't fire resume at app startup.
+      Update version to 1.2.0.
+      This is an informative message, not an error message.  It is normal to get this when leaving a page.
+      Update to download and run callback-test repository.
+      Update for 1.2.0.
+      Updated readme.
+
+Fil Maj (1):
+      JSPrompt "Security check" should whitelist all file URIs too
+
+Joe Bowser (7):
+      Fixing the jsConfirm so it doesn't break the back button
+      Adding handling of Search Button for the jsPrompt
+      Upgrading to Ice Cream Sandwich
+      HTC Fix
+      Making Alert cancellable so that it does not break the back button
+      Removing the Camera permission, since it is not required by PhoneGap by default
+      Fix for Console.log, didn't call the super of the method needed
+
+macdonst (6):
+      Fix for Issue #257: File Transfer with file:/// URIs
+      Return MediaError object instead of value
+      Normalize MediaError's with iOS
+      Updating to use Android 4.0 build environment
+      Fixing Project Properties file
+      Fixing compilation error in DroidGap
+
+nisc (1):
+      Fixes to make example project build and compile
+
+-------------------
+iOS
+-------------------
+Becky Gibson (2):
+      Update for iOS5
+      fixes #313 - return MediaError in error callback
+
+Brian Samson (1):
+      add documentation for correctOrientation and saveToAlbum options of camera.getPicture
+
+Dave Johnson (1):
+      This is messing people up who want to create the installer themselves.
+
+David H (1):
+      Make connection plugin work with iOS <4.0.
+
+Todd Stellanova (1):
+      Add OpenAllWhitelistURLsInWebView policy setting to determine whether ALL whitelisted URLs are opened within the embedded web view (as is sometimes desired).
+
+shazron (12):
+      Fixed #303 Add OS check in makefile, Lion minimum (for packaging installer only)
+      Fixed #302 Compiler warnings in PGMotion
+      Fixed #296 iFrames open in Mobile Safari
+      Fixed callback/callback-ios#3 - UniversalFramework target of PhoneGapLib does not compile under Xcode 4.2
+      Fixed callback/callback-ios#2 - Convert SBJson library use to JSONKit use
+      Fixed problem where deploying to device using PhoneGap.framework, the armv7 slice is missing from the fat binary.
+      Connection plugin (Reachability) - stop/start notifier on pause/resume of app.
+      Fixed callback/callback-ios#5 - Optimization: If white-list contains "*" (wildcard), do not do URL processing
+      Updated release notes for 1.2.0
+      Updated VERSION to 1.2.0
+      Updated hints in sample index.html
+      Added OpenAllWhitelistURLsInWebView to 1.2.0 release notes.
+
+-------------------
+BlackBerry
+-------------------
+Drew Walters (4):
+      Spawn a thread when calling executeScript.
+      Modify lifecycle to match Android/iOS.
+      Specify viewport width and height in sample.
+      Update to version 1.2.0
+
+-------------------
+WP7
+-------------------
+Jesse MacFadyen (17):
+      Local storage implementation
+      updated and passed all but 2 tests ( dot notation not supported for getting/setting non-existent keys )
+      Added more interesting Accel example.
+      Initial ChildBrowser work
+      Back|Forward|Close
+      More test cases
+      Plugins can be defined in the Lib namespace
+      Cleanup before pull request
+      cleanup or meta-tags + RootVisual Grid name for plugin use
+      Added build-time script to generate GapSourceDictionary
+      Removed t4 templating
+      Cleanup for project template
+      More Cleanup, removed ChildBrowser as it is a plugin and not part of the core
+      Added orientation events
+      The implementation file
+      changed refs to 1.1 to 1.2
+      more changes for 1.2
+
+sgrebnov (5):
+      support of pause/resume events
+      added onresume and onpause methods to BaseCommand
+      removed dublicate device object instance initialization
+      updated phonegap js file in unit tests
+      added support of custom plugins
+
